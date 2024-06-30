@@ -17,7 +17,7 @@ class Cell:
         self.options = [self.current]
 
     def draw(self, win):
-        if self.collapsed and self.current:
+        if self.collapsed and self.current is not None:
             win.blit(self.current.image, (self.x * self.rez, self.y * self.rez))
 
     def update(self):

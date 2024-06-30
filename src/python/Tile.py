@@ -5,12 +5,11 @@ class Tile:
         self.index = None
         self.rules = [set() for _ in range(4)]
 
-    def set_Rules(self, options):
+    def set_rules(self, options):
         for i in range(4):
             for option in options:
                 if self.edges[i] == option.edges[(i + 2) % 4]:
                     self.rules[i].add(option.index)
-
 
     def custom_deepcopy(self):
         new_tile = Tile(self.image, self.edges[:])

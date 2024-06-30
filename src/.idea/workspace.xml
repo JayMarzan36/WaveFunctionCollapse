@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="18ac6fde-5fbd-4ae9-bfc8-cbf8aedb4441" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/src.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cell.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Grid.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tile_Images/grass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tile_Images/sand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tile_Images/smaller_Images/grass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tile_Images/smaller_Images/sand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tile_Images/smaller_Images/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tile_Images/smaller_Images/water.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tile_Images/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tile_Images/water.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2iZIc0bF9OnmDLnW4PsSEoiL3Qf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Coding/Organized/WaveFunctionCollapse/WaveFunctionCollapse/src/python"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-5b207ade9991-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.17890.14" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="18ac6fde-5fbd-4ae9-bfc8-cbf8aedb4441" name="Changes" comment="" />
+      <created>1719691748439</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719691748439</updated>
+    </task>
+    <servers />
+  </component>
+</project>

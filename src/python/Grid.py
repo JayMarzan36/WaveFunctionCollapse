@@ -1,6 +1,6 @@
 import random
-import copy
 from Cell import Cell
+
 
 class Grid:
     def __init__(self, width, height, rez, options):
@@ -34,16 +34,15 @@ class Grid:
 
         # shallow copy of a grid
         grid_copy = [i for row in self.grid for i in row]
-        grid_copy.sort(key = lambda x:x.entropy())
+        grid_copy.sort(key=lambda x: x.entropy())
 
-        filtered_grid = list(filter(lambda x:x.entropy() > 1, grid_copy))
-        if filtered_grid == []:
+        filtered_grid = list(filter(lambda x: x.entropy() > 1, grid_copy))
+        if not filtered_grid:
             return None
 
         least_entropy_cell = filtered_grid[0]
-        filtered_grid = list(filter(lambda x:x.entropy()==least_entropy_cell.entropy(), filtered_grid))
+        filtered_grid = list(filter(lambda x: x.entropy() == least_entropy_cell.entropy(), filtered_grid))
 
-        # return a pick if filtered copy i s not empty
         pick = random.choice(filtered_grid)
         return pick
 
@@ -91,7 +90,6 @@ class Grid:
 
                     self.grid[i][j].options = [self.options[idx] for idx in cumulative_Valid_Options]
                     self.grid[i][j].update()
-        print("Propagation completed.")
 
     def collapse(self):
         pick = self.heuristic_Pick()

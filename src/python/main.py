@@ -6,8 +6,8 @@ from Tile import Tile
 pygame.init()
 
 width = 600
-height = 400
-rez = 10
+height = 600
+rez = 5
 
 display = pygame.display.set_mode((width, height), pygame.RESIZABLE)
 
@@ -22,14 +22,15 @@ def main():
     options = []
     # [top, right, bottom, left]
     tile_Types = [
-        {"name": "deepWater", "edges": [0, 0, 0, 0]},
-        {"name": "water", "edges": [1, 1, 1, 1]},
-        {"name": "lightwater", "edges": [0, 1, 0, 1]},
-        {"name": "sand", "edges": [1, 0, 1, 0]},
-        {"name": "darkerSand", "edges": [0, 0, 1, 1]},
-        {"name": "grass", "edges": [1, 1, 0, 0]},
-        {"name": "tree", "edges": [0, 1, 1, 0]},
-        {"name": "treeBlossom", "edges": [1, 0, 0, 1]}
+        {"name": "0", "edges": [1, 0, 1, 0]},
+        {"name": "1", "edges": [0, 1, 0, 1]},
+        {"name": "2", "edges": [0, 1, 1, 0]},
+        {"name": "3", "edges": [0, 0, 1, 1]},
+        {"name": "4", "edges": [1, 0, 0, 1]},
+        {"name": "5", "edges": [1, 1, 0, 0]},
+        {"name": "6", "edges": [0, 1, 1, 0]},
+        {"name": "7", "edges": [0, 0, 0, 1]},
+        {"name": "8", "edges": [1, 1, 1, 1]}
 
 
     ]

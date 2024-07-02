@@ -55,34 +55,34 @@ class Grid:
                     # Check cell above
                     if i > 0:
                         cell_Above = self.grid[i - 1][j]
-                        valid_Options = set()
+                        valid_options = set()
                         for option in cell_Above.options:
-                            valid_Options.update(option.rules[2])
-                        cumulative_Valid_Options.intersection_update(valid_Options)
+                            valid_options.update(option.rules[2])
+                        cumulative_Valid_Options.intersection_update(valid_options)
 
                     # Check cell right
                     if j < self.cell_H - 1:
                         cell_Right = self.grid[i][j + 1]
-                        valid_Options = set()
+                        valid_options = set()
                         for option in cell_Right.options:
-                            valid_Options.update(option.rules[3])
-                        cumulative_Valid_Options.intersection_update(valid_Options)
+                            valid_options.update(option.rules[3])
+                        cumulative_Valid_Options.intersection_update(valid_options)
 
                     # Check cell below
                     if i < self.cell_W - 1:
                         cell_Down = self.grid[i + 1][j]
-                        valid_Options = set()
+                        valid_options = set()
                         for option in cell_Down.options:
-                            valid_Options.update(option.rules[0])
-                        cumulative_Valid_Options.intersection_update(valid_Options)
+                            valid_options.update(option.rules[0])
+                        cumulative_Valid_Options.intersection_update(valid_options)
 
                     # Check cell left
                     if j > 0:
                         cell_Left = self.grid[i][j - 1]
-                        valid_Options = set()
+                        valid_options = set()
                         for option in cell_Left.options:
-                            valid_Options.update(option.rules[1])
-                        cumulative_Valid_Options.intersection_update(valid_Options)
+                            valid_options.update(option.rules[1])
+                        cumulative_Valid_Options.intersection_update(valid_options)
 
                     # if any(option.index in [2, 3] for option in self.grid[i][j].options):
                     #     cumulative_Valid_Options.intersection_update(

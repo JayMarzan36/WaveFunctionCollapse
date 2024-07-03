@@ -20,19 +20,11 @@ def load_Image(path, rez, padding=0):
 
 def main():
     options = []
-    # [top, right, bottom, left]
+    # [top, right, bottom, left], maybe
     tile_Types = [
-        {"name": "0", "edges": [1, 0, 1, 0]},
-        {"name": "1", "edges": [0, 1, 0, 1]},
-        {"name": "2", "edges": [0, 1, 1, 0]},
-        {"name": "3", "edges": [0, 0, 1, 1]},
-        {"name": "4", "edges": [1, 0, 0, 1]},
-        {"name": "5", "edges": [1, 1, 0, 0]},
-        {"name": "6", "edges": [0, 1, 1, 0]},
-        {"name": "7", "edges": [0, 0, 0, 1]},
-        {"name": "8", "edges": [1, 1, 1, 1]}
-
-
+        {"name": "9", "edges": [0, 1, 0, 1]},
+        {"name": "10", "edges": [1, 2, 1, 2]},
+        {"name": "11", "edges": [2, 0, 2, 0]}
     ]
     for i, tile_type in enumerate(tile_Types):
         image = load_Image(f"./tile_Images/{tile_type['name']}.png", rez)

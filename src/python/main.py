@@ -7,12 +7,13 @@ pygame.init()
 
 width = 600
 height = 600
-rez = 5
+rez = 3
 
 display = pygame.display.set_mode((width, height), pygame.RESIZABLE)
+pygame.display.set_caption("Wave Function Collapse")
 
 
-def load_Image(path, rez, padding=0):
+def load_image(path, rez, padding=0):
     image = pygame.image.load(path).convert_alpha()
     image = pygame.transform.scale(image, (rez - padding, rez - padding))
     return image
@@ -27,7 +28,7 @@ def main():
         {"name": "11", "edges": [2, 0, 2, 0]}
     ]
     for i, tile_type in enumerate(tile_Types):
-        image = load_Image(f"./tile_Images/{tile_type['name']}.png", rez)
+        image = load_image(f"./tile_Images/{tile_type['name']}.png", rez)
         options.append(Tile(image, tile_type["edges"]))
 
     for i, tile in enumerate(options):
